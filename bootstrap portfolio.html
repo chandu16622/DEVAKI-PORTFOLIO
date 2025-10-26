@@ -14,6 +14,12 @@
 
     <style>
         :root {
+            --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --heading-font: "Ubuntu", sans-serif;
+            --nav-font: "Nunito", sans-serif;
+        }
+
+        :root {
 
             --bg-light: #ffffff;
             --accent-primary: #008080;
@@ -308,10 +314,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Stack</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Stack</a></li>
                     <li class="nav-item"><a class="nav-link" href="#soft-skills">Soft Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
                 </ul>
@@ -322,34 +329,137 @@
     <header id="about" class="hero-section text-center">
         <div class="container">
             <h1 class="display-2 fw-bolder">Agam Devaki</h1>
+            <p class="lead">I'm a UI/UX Designer, Web Developer</p>
             <p class="lead fw-light text-uppercase mt-2">Entry-Level *React Developer* | Visakhapatnam, AP</p>
-            <p class="mt-4 fs-5 mx-auto text-light" style="max-width: 800px;">
-                Eager to join a challenging environment, I apply a strong foundation in **HTML, CSS, and JavaScript
-                (ES6+)* with practical experience in building dynamic interfaces using **React.js*. Committed to
-                writing clean, maintainable code and contributing immediately to collaborative front-end development
-                teams.
-            </p>
-            <!-- Resume Button -->
-            <a class="btn btn-outline-light btn-lg mt-3 shadow-lg"
-                href="file:///C:/Users/AGAM%20DEVAKI/Downloads/Agam-Devaki-FlowCV-Resume-20250926%20(2)%20(1).pdf"
-                target="_blank" role="button">
-                <i class="fas fa-file-alt me-2"></i> View Resume
-            </a>
+            <h5>
+                <p>I aspire to contribute to dynamic teams in innovative environments <br> where I can continuously
+                    learn modern web technologies, implement best practices,<br> and collaborate on projects that
+                    challenge my problem-solving skills</p>
+                </h4>
 
-            <!-- Spacer / Intro before Projects -->
-            <div class="text-center my-5" id="view-work-intro">
-                <h4 class="text-light fw-bold">Check out some of the projects I've built</h4>
-                <p class="text-light-50">From responsive websites to interactive JavaScript applications</p>
-            </div>
-            <div class="text-center my-7" id="view-work-intro">
 
-                <!-- View My Work button -->
-                <a href="#projects" class="btn btn-primary btn-lg mt-2">View My Work</a>
-                <a href="#contact" class="btn btn-primary btn-lg mt-2 ">Get In Touch</a>
+                <!-- Resume Button -->
+                <a class="btn btn-outline-light btn-lg mt-3 shadow-lg"
+                    href="file:///C:/Users/AGAM%20DEVAKI/Downloads/Agam-Devaki-FlowCV-Resume-20250926%20(2)%20(1).pdf"
+                    target="_blank" role="button">
+                    <i class="fas fa-file-alt me-2"></i> View Resume
+                </a>
 
-            </div>
+                <!-- Spacer / Intro before Projects -->
+                <div class="text-center my-5" id="view-work-intro">
+                    <h4 class="text-light fw-bold">Check out some of the projects I've built</h4>
+                    <p class="text-light-50">From responsive websites to interactive JavaScript applications</p>
+                </div>
+                <div class="text-center my-7" id="view-work-intro">
+
+                    <!-- View My Work button -->
+                    <a href="#projects" class="btn btn-light btn-lg mt-2">View My Work</a>
+                    <a href="#contact" class="btn btn-light btn-lg mt-2 ">Get In Touch</a>
+
+                </div>
 
     </header>
+    <section id="about-me" class="bg-section rounded p-5 shadow-sm my-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-dark">
+                <i class="fas fa-user me-2 text-accent-primary"></i>About Me
+            </h2>
+
+            <div class="row align-items-center">
+                <!-- Left Column: Content -->
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Hi, I'm Agam Devaki</h3>
+                    <p class="mb-3">
+                        I'm a passionate **UI/UX Designer & Front-End Developer** based in Visakhapatnam, AP.
+                        I have a strong foundation in <b>HTML, CSS, JavaScript, and React.js</b> and enjoy
+                        building responsive, user-friendly websites and web applications.
+                    </p>
+                    <p class="mb-3">
+                        I am committed to writing clean, maintainable code and continuously learning
+                        modern web technologies to improve my craft. I thrive in collaborative environments
+                        and love turning ideas into functional digital experiences.
+                    </p>
+                    <a href="#contact" class="btn btn-accent-primary mt-3">Get in Touch</a>
+                </div>
+
+                <!-- Right Column: Profile Picture Card -->
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card shadow-sm border-0">
+                        <img src=class="card-img-top rounded-circle p-3" alt="Profile Picture">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Agam Devaki</h5>
+                            <p class="card-text text-muted">UI/UX Designer & Front-End Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="mb-5 bg-section rounded p-5 shadow-sm">
+        <h2 class="text-center mb-5 text-black">
+            <i class="fas fa-user-graduate me-2 text-white"></i>Education & Training
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Professional Training -->
+            <div class="col-lg-8 col-12">
+                <div class="card edu-card bg-uiux border-0 shadow-sm h-100 text-center p-4">
+                    <div class="card-body text-black">
+                        <i class="fas fa-certificate fa-2x text-accent-primary mb-3"></i>
+                        <h5 class="fw-bold text-black mb-2">UI/UX Development</h5>
+                        <p class="text-light mb-1">Tech Mahindra SMART Academy for Digital Technologies</p>
+                        <small class="text-light d-block mb-2">Aug 2025 – Nov 2025</small>
+                        <span class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">Professional
+                            Training</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B.Tech -->
+            <div class="col-lg-8 col-12">
+                <div class="card edu-card bg-btech border-0 shadow-sm h-100 text-center p-4">
+                    <div class="card-body text-light">
+                        <i class="fas fa-graduation-cap fa-2x text-accent-primary mb-3"></i>
+                        <h5 class="fw-bold text-black mb-2">B.Tech (ECE)</h5>
+                        <p class="text-light mb-1">Welfare Institute of Science, Technology & Management</p>
+                        <small class="text-light d-block mb-2">2019 – 2023</small>
+                        <span class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">Undergraduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intermediate -->
+            <div class=" col-lg-8 col-12">
+                <div class="card edu-card bg-inter border-0 shadow-sm h-100 text-center p-4">
+                    <div class="card-body text-light">
+                        <i class="fas fa-school fa-2x text-accent-primary mb-3"></i>
+                        <h5 class="fw-bold text-black mb-2">Intermediate (MPC)</h5>
+                        <p class="text-light mb-1">Narayana Junior College</p>
+                        <small class="text-light d-block mb-2">2017 – 2019</small>
+                        <span class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">Pre-University</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SSC -->
+            <div class=" col-lg-8 col-12">
+                <div class="card edu-card bg-ssc border-0 shadow-sm h-100 text-center p-4">
+                    <div class="card-body text-light">
+                        <i class="fas fa-book fa-2x text-accent-primary mb-3"></i>
+                        <h5 class="fw-bold text-black mb-2">Secondary School (SSC)</h5>
+                        <p class="text-light mb-1">S.V.V.P English Medium School</p>
+                        <small class="text-light d-block mb-2">2016 – 2017</small>
+                        <span class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">High School</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
 
     <main class="container my-5">
         <section id="skills" class="bg-section rounded p-5 shadow-sm mt-4">
@@ -379,6 +489,7 @@
                         <div class="skill-progress">
                             <div style="width: 85%;">85%</div>
                         </div>
+
                     </div>
 
                     <div class="skill-box mb-4">
@@ -422,143 +533,6 @@
             </div>
         </section>
 
-
-
-
-        ---
-
-        <section id="projects" class="mb-5 py-5">
-            <h2 class="text-center mb-5 text-dark"><i class="fas fa-laptop-code me-2 text-primary"></i>Featured
-                Projects</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-5">
-                <div class="col">
-                    <div class="card h-100 card-project bg-img">
-                        <div class="card-header card-icon text-center">
-                            <i class="fas fa-image fa-3x"></i>
-                        </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold">Responsive Image Grid</h5>
-                            <p class="card-text text-dark-75">
-                                A static gallery demonstrating <b>responsive web design</b> principles. Built with pure
-                                <b>HTML and CSS Grid</b> to ensure optimal display across various screen sizes. Features
-                                smooth CSS transitions and hover effects for a clean UI.
-                            </p>
-                        </div>
-                        <div
-                            class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
-                            <div>
-                                <span class="badge rounded-pill bg-primary me-2 mb-2">HTML</span>
-                                <span class="badge rounded-pill bg-primary me-2 mb-2">CSS Grid</span>
-                                <span class="badge rounded-pill bg-primary me-2 mb-2">Responsive</span>
-                            </div>
-                            <a href="https://chandu16622.github.io/photo-gallery1/" target="_blank"
-                                class="btn btn-sm btn-outline-dark mt-2 mt-sm-0">
-                                View Live <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 card-project bg-task">
-                        <div class="card-header card-icon text-center">
-                            <i class="fas fa-list-check fa-3x text-white"></i>
-                        </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold text-white">Vanilla JS Task Manager</h5>
-                            <p class="card-text text-light">
-                                An interactive To-Do List application built using <b>Vanilla JavaScript, HTML, and
-                                    Bootstrap</b>.
-                                This project showcases strong <b>DOM manipulation</b> skills and implements core CRUD
-                                functionality
-                                (Create, Read, Update, Delete) for task management.
-                            </p>
-                        </div>
-                        <div
-                            class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
-                            <div>
-                                <span class="badge rounded-pill bg-primary me-2 mb-2">Vanilla JavaScript</span>
-                                <span class="badge rounded-pill bg-primary me-2 mb-2">DOM</span>
-                                <span class="badge rounded-pill bg-primary me-2 mb-2">Bootstrap</span>
-                            </div>
-                            <a href="https://chandu16622.github.io/javascript/" target="_blank"
-                                class="btn btn-sm btn-outline-light mt-2 mt-sm-0">
-                                View Live <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-        </section>
-
-        ---
-
-
-        <section id="education" class="mb-5 bg-section rounded p-5 shadow-sm">
-            <h2 class="text-center mb-5 text-black">
-                <i class="fas fa-user-graduate me-2 text-white"></i>Education & Training
-            </h2>
-
-            <div class="row g-4 justify-content-center">
-
-                <!-- Professional Training -->
-                <div class="col-lg-8 col-12">
-                    <div class="card edu-card bg-uiux border-0 shadow-sm h-100 text-center p-4">
-                        <div class="card-body text-black">
-                            <i class="fas fa-certificate fa-2x text-accent-primary mb-3"></i>
-                            <h5 class="fw-bold text-black mb-2">UI/UX Development</h5>
-                            <p class="text-light mb-1">Tech Mahindra SMART Academy for Digital Technologies</p>
-                            <small class="text-light d-block mb-2">Aug 2025 – Nov 2025</small>
-                            <span class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">Professional
-                                Training</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- B.Tech -->
-                <div class="col-lg-8 col-12">
-                    <div class="card edu-card bg-btech border-0 shadow-sm h-100 text-center p-4">
-                        <div class="card-body text-light">
-                            <i class="fas fa-graduation-cap fa-2x text-accent-primary mb-3"></i>
-                            <h5 class="fw-bold text-black mb-2">B.Tech (ECE)</h5>
-                            <p class="text-light mb-1">Welfare Institute of Science, Technology & Management</p>
-                            <small class="text-light d-block mb-2">2019 – 2023</small>
-                            <span class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">Undergraduate</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Intermediate -->
-                <div class=" col-lg-8 col-12">
-                    <div class="card edu-card bg-inter border-0 shadow-sm h-100 text-center p-4">
-                        <div class="card-body text-light">
-                            <i class="fas fa-school fa-2x text-accent-primary mb-3"></i>
-                            <h5 class="fw-bold text-black mb-2">Intermediate (MPC)</h5>
-                            <p class="text-light mb-1">Narayana Junior College</p>
-                            <small class="text-light d-block mb-2">2017 – 2019</small>
-                            <span
-                                class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">Pre-University</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SSC -->
-                <div class=" col-lg-8 col-12">
-                    <div class="card edu-card bg-ssc border-0 shadow-sm h-100 text-center p-4">
-                        <div class="card-body text-light">
-                            <i class="fas fa-book fa-2x text-accent-primary mb-3"></i>
-                            <h5 class="fw-bold text-black mb-2">Secondary School (SSC)</h5>
-                            <p class="text-light mb-1">S.V.V.P English Medium School</p>
-                            <small class="text-light d-block mb-2">2016 – 2017</small>
-                            <span class="badge bg-accent-primary text-light px-3 py-2 rounded-pill">High School</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        ---
         <!-- ✅ Soft Skills Section (Two Columns) -->
         <section id="soft-skills" class="bg-section rounded p-5 shadow-sm mb-5">
             <h3 class="text-center mb-5 text-dark fw-bold">
@@ -617,6 +591,183 @@
         </section>
 
 
+
+
+        ---
+
+
+
+        <section id="projects" class="mb-5 py-5">
+            <h2 class="text-center mb-5 text-dark">
+                <i class="fas fa-laptop-code me-2 text-primary"></i>Featured Projects
+            </h2>
+
+            <!-- Project Categories Navbar -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="projectTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all"
+                        type="button" role="tab">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="html-tab" data-bs-toggle="pill" data-bs-target="#html&#css" type="button"
+                        role="tab">HTML</button>
+                </li>
+               
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="js-tab" data-bs-toggle="pill" data-bs-target="#js" type="button"
+                        role="tab">JavaScript</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="react-tab" data-bs-toggle="pill" data-bs-target="#react" type="button"
+                        role="tab">React</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ps-tab" data-bs-toggle="pill" data-bs-target="#photoshop" type="button"
+                        role="tab">Photoshop</button>
+                </li>
+            </ul>
+
+            <!-- Project Cards -->
+            <div class="tab-content" id="projectTabContent">
+                <!-- All Projects -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 g-5">
+                        <!-- Project 1: HTML/CSS -->
+                        <div class="col">
+                            <div class="card h-100 card-project bg-img col-lg-10">
+                                <div class="card-header card-icon text-center">
+                                    <i class="fas fa-image fa-3x"></i>
+                                </div>
+                                <div class="card-body p-6">
+                                    <h5 class="card-title fw-bold">Responsive Image Grid</h5>
+                                    <p class="card-text text-dark-75">
+                                        Built with HTML & CSS Grid for responsive layouts with smooth hover effects.
+                                    </p>
+                                </div>
+                                <div
+                                    class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+                                    <div>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">HTML</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">CSS</span>
+                                    </div>
+                                    <a href="https://chandu16622.github.io/photo-gallery1/" target="_blank"
+                                        class="btn btn-sm btn-outline-dark mt-2 mt-sm-0">View Live <i
+                                            class="fas fa-external-link-alt ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: JavaScript -->
+                        <div class="col">
+                            <div class="card h-100 card-project bg-task col-lg-10">
+                                <div class="card-header card-icon text-center">
+                                    <i class="fas fa-list-check fa-3x text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold text-white">Vanilla JS Task Manager</h5>
+                                    <p class="card-text text-light">
+                                        CRUD task manager using Vanilla JS, HTML, and Bootstrap.
+                                    </p>
+                                </div>
+                                <div
+                                    class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+                                    <div>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">JavaScript</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">DOM</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">Bootstrap</span>
+                                    </div>
+                                    <a href="https://chandu16622.github.io/javascript/" target="_blank"
+                                        class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Live <i
+                                            class="fas fa-external-link-alt ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                           <div class="col">
+                            <div class="card h-100 card-project bg-task col-lg-10">
+                                <div class="card-header card-icon text-center">
+                                    <i class="fas fa-list-check fa-3x text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold text-white">Responsive calculator</h5>
+                                   
+                                </div>
+                                <div
+                                    class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+                                    <div>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">JavaScript</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">DOM</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">Bootstrap</span>
+                                    </div>
+                                    <a href="https://chandu16622.github.io/javascript/" target="_blank"
+                                        class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Live <i
+                                            class="fas fa-external-link-alt ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: React -->
+                        <div class="col">
+                            <div class="card h-100 card-project bg-img col-lg-10">
+                                <div class="card-header card-icon text-center">
+                                    <i class="fab fa-react fa-3x text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold text-white">React </h5>
+                                    <p class="card-text text-light">
+                                        
+                                    </p>
+                                </div>
+                                <div
+                                    class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+                                    <div>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">React</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">HTML</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">CSS</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Live <i
+                                            class="fas fa-external-link-alt ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Photoshop -->
+                        <div class="col">
+                            <div class="card h-100 card-project bg-img col-lg-10">
+                                <div class="card-header card-icon text-center">
+                                    <i class="fas fa-paint-brush fa-3x text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold text-white">UI/UX Mockups</h5>
+                                    <p class="card-text text-light">
+                                        Designed UI/UX mockups for web and mobile using Photoshop and Figma.
+                                    </p>
+                                </div>
+                                <div
+                                    class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+                                    <div>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">Photoshop</span>
+                                        <span class="badge rounded-pill bg-primary me-2 mb-2">UI/UX</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Mockups <i
+                                            class="fas fa-external-link-alt ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- You can duplicate the same row and wrap each category inside their respective tab-pane (#html, #css, #js, #react, #photoshop) -->
+            </div>
+        </section>
+
+
+
+
+
         <section id="interests" class="mb-5 p-4 text-center">
             <h3 class="mb-3 text-dark"><i class="fas fa-heart me-2 text-accent-primary"></i>Interests</h3>
             <p class="lead text-muted">🎨 Doing crafts | 🎧 Listening to music |🎨 painting /Drawing</p>
@@ -625,56 +776,60 @@
     </main>
 
     <footer id="contact" class="footer-custom p-5">
-         <!-- Section Title -->
-     <section id="contact" class="footer-custom p-5">
-    <div class="container">
-        <div class="row g-4">
-            <!-- Left Column: Contact Info -->
-            <div class="col-lg-5">
-                <h3 class="text-light mb-4">Contact Info</h3>
-              
-                <div class="mb-3">
-                    <i class="fas fa-map-marker-alt me-2"></i>
-                    <strong>Location:</strong> Visakhapatnam, 530027
-                </div>
+        <!-- Section Title -->
+        <section id="contact" class="footer-custom p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Left Column: Contact Info -->
+                    <div class="col-lg-5">
+                        <h3 class="text-light mb-4">Contact Info</h3>
 
-                <div class="mb-3">
-                    <i class="fas fa-phone me-2"></i>
-                    <strong>Phone:</strong> 6301055724, 9553099956
-                </div>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <strong>Location:</strong> Visakhapatnam, 530027
+                        </div>
 
-                <div class="mb-3">
-                    <i class="fas fa-envelope me-2"></i>
-                    <strong>Email:</strong> devchandu52@gmail.com
-                </div>
-            </div>
+                        <div class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            <strong>Phone:</strong> 6301055724, 9553099956
+                        </div>
 
-            <!-- Right Column: Get In Touch Form -->
-            <div class="col-lg-7">
-                <h3 class="text-light mb-4">Get In Touch</h3>
-                <form action="forms/contact.php" method="post" class="php-email-form">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="col-12">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" rows="6" class="form-control" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="col-12 text-end">
-                            <button type="submit" class="btn btn-dark">Send Message</button>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <strong>Email:</strong> devchandu52@gmail.com
                         </div>
                     </div>
-                </form>
+
+                    <!-- Right Column: Get In Touch Form -->
+                    <div class="col-lg-7">
+                        <h3 class="text-light mb-4">Get In Touch</h3>
+                        <form action="forms/contact.php" method="post" class="php-email-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" rows="6" class="form-control" placeholder="Message"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-dark">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- <div class="container text-center">
             <h5 class="mb-4 fw-bold text-light">Ready to start a project? Let's connect.</h5>
